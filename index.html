@@ -229,6 +229,136 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://notanswer.github.io/2017/11/13/openvpn/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xiaoc">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Record learning">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/13/openvpn/" itemprop="url">open</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-13T13:51:30+08:00">
+                2017-11-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="CentOS6-5搭建Open服务器"><a href="#CentOS6-5搭建Open服务器" class="headerlink" title="CentOS6.5搭建Open服务器"></a>CentOS6.5搭建Open服务器</h2><p>安装openssl和lzo，lzo用于压缩通讯数据加快传输速度<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum -y install openssl openssl-devel</span><br><span class="line">yum -y install lzo</span><br></pre></td></tr></table></figure></p>
+<p>安装openvpn和easy-rsa</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install openvpn easy-rsa</span><br></pre></td></tr></table></figure>
+<p>修改vars文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/share/easy-rsa/2.0/</span><br><span class="line">vim vars</span><br></pre></td></tr></table></figure>
+<p>修改注册信息，比如公司地址、公司名称、部门名称等。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">export KEY_COUNTRY=&quot;CN&quot; </span><br><span class="line">export KEY_PROVINCE=&quot;HA&quot;</span><br><span class="line">export KEY_CITY=&quot;ZZ&quot;</span><br><span class="line">export KEY_ORG=&quot;MyOrganization&quot;</span><br><span class="line">export KEY_EMAIL=&quot;me@myhost.mydomain&quot;</span><br><span class="line">export KEY_OU=&quot;MyOrganizationalUnit&quot;</span><br></pre></td></tr></table></figure></p>
+<p>初始化环境变量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source vars</span><br></pre></td></tr></table></figure></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/13/openvpn/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://notanswer.github.io/2017/11/11/kuai-jie-jian/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -299,116 +429,16 @@
 
       
         
-          
-            <p>SHIFT+INSERT 或 CTRL+V 粘贴剪贴板中的内容到当前位置<br>ALT+BACKSPACE 或 CTRL+Z 撤销上一步的操作<br>ALT+SHIFT+BACKSPACE 重做上一步被撤销的操作 </p>
+          <p>SHIFT+INSERT 或 CTRL+V 粘贴剪贴板中的内容到当前位置<br>ALT+BACKSPACE 或 CTRL+Z 撤销上一步的操作<br>ALT+SHIFT+BACKSPACE 重做上一步被撤销的操作 </p>
 <p>Windows键+M 最小化所有被打开的窗口。<br>Windows键+CTRL+M 重新将恢复上一项操作前窗口的大小和位置<br>Windows键+E 打开资源管理器<br>Windows键+F 打开“查找：所有文件”对话框<br>Windows键+R 打开“运行”对话框<br>Windows键+BREAK 打开“系统属性”对话框<br>Windows键+CTRL+F 打开“查找：计算机”对话框<br>SHIFT+F10或鼠标右击 打开当前活动项目的快捷菜单<br>SHIFT 在放入CD的时候按下不放，可以跳过自动播放CD。在打开word的时候按下不放，可以跳过自启动的宏 </p>
-<p>ALT+F4 关闭当前应用程序<br>ALT+SPACEBAR 打开程序最左上角的菜单<br>ALT+TAB 切换当前程序<br>ALT+ESC 切换当前程序<br>ALT+ENTER 将windows下运行的MSDOS窗口在窗口和全屏幕状态间切换<br>PRINT SCREEN 将当前屏幕以图象方式拷贝到剪贴板<br>ALT+PRINT SCREEN 将当前活动程序窗口以图象方式拷贝到剪贴板<br>CTRL+F4 关闭当前应用程序中的当前文本（如word中）<br>CTRL+F6 切换到当前应用程序中的下一个文本（加shift 可以跳到前一个窗口） </p>
-<p>在IE中： </p>
-<p>ALT+RIGHT ARROW 显示前一页（前进键）<br>ALT+LEFT ARROW 显示后一页（后退键）<br>CTRL+TAB 在页面上的各框架中切换（加shift反向）<br>F5 刷新<br>CTRL+F5 强行刷新<br>目的快捷键 </p>
-<p>激活程序中的菜单栏 F10 </p>
-<p>执行菜单上相应的命令 ALT+菜单上带下划线的字母 </p>
-<p>关闭多文档界面程序中的当 </p>
-<p>前窗口 CTRL+ F4 </p>
-<p>关闭当前窗口或退出程序 ALT+ F4 </p>
-<p>复制 CTRL+ C </p>
-<p>剪切 CTRL+ X </p>
-<p>删除 DELETE </p>
-<p>显示所选对话框项目的帮助 F1 </p>
-<p>显示当前窗口的系统菜单 ALT+空格键 </p>
-<p>显示所选项目的快捷菜单 SHIFT+ F10 </p>
-<p>显示“开始”菜单 CTRL+ ESC </p>
-<p>显示多文档界面程序的系统 </p>
-<p>菜单 ALT+连字号(-) </p>
-<p>粘贴 CTR L+ V </p>
-<p>切换到上次使用的窗口或者 </p>
-<p>按住 ALT然后重复按TAB， </p>
-<p>切换到另一个窗口 ALT+ TAB </p>
-<p>撤消 CTRL+ Z </p>
-<p>二、使用“Windows资源管理器”的快捷键 </p>
-<p>目的快捷键 </p>
-<p>如果当前选择展开了,要折 </p>
-<p>叠或者选择父文件夹左箭头 </p>
-<p>折叠所选的文件夹 NUM LOCK+负号(-) </p>
-<p>如果当前选择折叠了，要展开 </p>
-<p>或者选择第一个子文件夹右箭头 </p>
-<p>展开当前选择下的所有文件夹 NUM LOCK+* </p>
-<p>展开所选的文件夹 NUM LOCK+加号(+) </p>
-<p>在左右窗格间切换 F6 </p>
-<p>三、使用 WINDOWS键 </p>
-<p>可以使用 Microsoft自然键盘或含有 Windows徽标键的其他任何兼容键盘的以下快捷键。 </p>
-<p>目的快捷键<br>在任务栏上的按钮间循环 WINDOWS+ TAB </p>
-<p>显示“查找：所有文件” WINDOWS+ F </p>
-<p>显示“查找：计算机” CTRL+ WINDOWS+ F </p>
-<p>显示“帮助” WINDOWS+ F1 </p>
-<p>显示“运行”命令 WINDOWS+ R </p>
-<p>显示“开始”菜单 WINDOWS </p>
-<p>显示“系统属性”对话框 WINDOWS+ BREAK </p>
-<p>显示“Windows资源管理器” WINDOWS+ E </p>
-<p>最小化或还原所有窗口 WINDOWS+ D </p>
-<p>撤消最小化所有窗口 SHIFT+ WINDOWS+ M </p>
-<p>四、使用“我的电脑”和“Windows资源管理器”的快捷键 </p>
-<p>目的快捷键 </p>
-<p>关闭所选文件夹及其所有父 </p>
-<p>文件夹按住 SHIFT键再单击“关闭按钮（仅适用于“我的电脑”） </p>
-<p>向后移动到上一个视图 ALT+左箭头 </p>
-<p>向前移动到上一个视图 ALT+右箭头 </p>
-<p>查看上一级文件夹 BACKSPACE </p>
-<p>五、使用对话框中的快捷键 </p>
-<p>目的快捷键 </p>
-<p>取消当前任务 ESC </p>
-<p>如果当前控件是个按钮，要 </p>
-<p>单击该按钮或者如果当前控 </p>
-<p>件是个复选框，要选择或清 </p>
-<p>除该复选框或者如果当前控 </p>
-<p>件是个选项按钮，要单击该 </p>
-<p>选项空格键 </p>
-<p>单击相应的命令 ALT+带下划线的字母 </p>
-<p>单击所选按钮 ENTER </p>
-<p>在选项上向后移动 SHIFT+ TAB </p>
-<p>在选项卡上向后移动 CTRL+ SHIFT+ TAB </p>
-<p>在选项上向前移动 TAB </p>
-<p>在选项卡上向前移动 CTRL+ TAB </p>
-<p>如果在“另存为”或“打开” </p>
-<p>对话框中选择了某文件夹， </p>
-<p>要打开上一级文件夹 BACKSPACE </p>
-<p>在“另存为”或“打开”对 </p>
-<p>话框中打开“保存到”或 </p>
-<p>“查阅” F4 </p>
-<p>刷新“另存为”或“打开” </p>
-<p>对话框 F5 </p>
-<p>六、使用“桌面”、“我的电脑”和“Windows资源管理器”快捷键 </p>
-<p>选择项目时，可以使用以下快捷键。 </p>
-<p>目的快捷键 </p>
-<p>插入光盘时不用“自动播放” </p>
-<p>功能按住 SHIFT插入 CD-ROM </p>
-<p>复制文件按住 CTRL拖动文件 </p>
-<p>创建快捷方式按住 CTRL+SHIFT拖动文件 </p>
-<p>立即删除某项目而不将其放入 SHIFT+DELETE </p>
-<p>“回收站” </p>
-<p>显示“查找：所有文件” F3<br>显示项目的快捷菜单 APPLICATION键 </p>
-<p>刷新窗口的内容 F5 </p>
-<p>重命名项目 F2 </p>
-<p>选择所有项目 CTRL+ A </p>
-<p>查看项目的属性 ALT+ ENTER或 ALT+双击 </p>
-<p>可将 APPLICATION键用于 Microsoft自然键盘或含有 APPLICATION键的其他兼容键 </p>
-<p>七、Microsoft放大程序的快捷键 </p>
-<p>这里运用Windows徽标键和其他键的组合。 </p>
-<p>快捷键目的 </p>
-<p>Windows徽标+PRINT SCREEN将屏幕复制到剪贴板（包括鼠标光标 </p>
-<p>Windows徽标+SCROLL LOCK将屏幕复制到剪贴板（不包括鼠标光标） </p>
-<p>Windows徽标+ PAGE UP切换反色。 </p>
-<p>Windows徽标+ PAGE DOWN切换跟随鼠标光标 </p>
-<p>Windows徽标+向上箭头增加放大率 </p>
-<p>Windows徽标+向下箭头减小放大率 </p>
-<p>八、使用辅助选项快捷键 </p>
-<p>目的快捷键 </p>
-<p>切换筛选键开关右SHIFT八秒 </p>
-<p>切换高对比度开关左ALT+左SHIFT+PRINT SCREEN </p>
-<p>切换鼠标键开关左ALT+左SHIFT+NUM LOCK </p>
-<p>切换粘滞键开关 SHIFT键五次 </p>
-<p>切换切换键开关 NUM LOCK五秒</p>
-
-          
+<p>ALT+F4 关闭当前应用程序<br>ALT+SPACEBAR 打开程序最左上角的菜单<br>ALT+TAB 切换当前程序<br>ALT+ESC 切换当前程序<br>ALT+ENTER 将windows下运行的MSDOS窗口在窗口和全屏幕状态间切换<br>PRINT SCREEN 将当前屏幕以图象方式拷贝到剪贴板<br>ALT+PRINT SCREEN 将当前活动程序窗口以图象方式拷贝到剪贴板<br>CTRL+F4 关闭当前应用程序中的当前文本（如word中）<br>CTRL+F6 切换到当前应用程序中的下一个文本（加shift 可以跳到前一个窗口）<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/11/kuai-jie-jian/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -488,7 +518,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -540,6 +570,7 @@
   
 </div>
 
+<!--
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
@@ -551,6 +582,7 @@
 
   <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
 
+-->
 
 
 
